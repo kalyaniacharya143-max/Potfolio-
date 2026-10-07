@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #08111f;
+    color: #ffffff;
+}
+
+nav {
+    height: 70px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0b1728;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #08111f, #102b46);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.small-title {
+    color: #38bdf8;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span,
+.heading span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.hero p {
+    color: #aebdce;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #38bdf8;
+    color: #08111f;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.card,
+.project-card,
+.contact-card {
+    max-width: 900px;
+    margin: auto;
+    background: #101d30;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #20354d;
+}
+
+.card p,
+.project-card p,
+.contact-card p {
+    color: #b6c4d4;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    width: 170px;
+    padding: 25px;
+    text-align: center;
+    background: #101d30;
+    border: 1px solid #20354d;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+.project-label {
+    display: inline-block;
+    background: #38bdf8;
+    color: #08111f;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.project-card h4 {
+    margin: 25px 0 10px;
+    color: #38bdf8;
+}
+
+.project-card ul {
+    margin-left: 25px;
+    color: #b6c4d4;
+    line-height: 2;
+}
+
+.tech {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech span {
+    background: #172a42;
+    padding: 8px 14px;
+    border-radius: 20px;
+    color: #38bdf8;
+}
+
+.workflow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.workflow div {
+    background: #17263a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.workflow h4 {
+    color: #38bdf8;
+    font-size: 22px;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#message {
+    color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    background: #050b14;
+    padding: 25px;
+    color: #718096;
+}
+
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .workflow {
+        grid-template-columns: 1fr;
+    }
+}
